@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th rowspan="2">STT</th>
+        <th rowspan="2">MÔN HỌC</th>
+        <th colspan="5">ĐIỂM</th>
+    </tr>
+    <tr>
+        <td>15 Phút</td>
+        <td>1 Tiết</td>
+        <td>Giữa kỳ</td>
+        <td>Cuối kỳ</td>
+        <td>Trung bình môn</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Toán</td>
+        <td><input type="number" id="1T"></td>
+        <td><input type="number" id="2T"></td>
+        <td><input type="number" id="3T"></td>
+        <td><input type="number" id="4T"></td>
+        <td><p id="showdiemT"></p></td>
+    </tr><tr>
+        <td>2</td>
+        <td>Văn</td>
+        <td><input type="number" id="1V"></td>
+        <td><input type="number" id="2V"></td>
+        <td><input type="number" id="3V"></td>
+        <td><input type="number" id="4V"></td>
+        <td><p id="showdiemV"></p></td>
+    </tr><tr>
+        <td>3</td>
+        <td>Anh</td>
+        <td><input type="number" id="1A"></td>
+        <td><input type="number" id="2A"></td>
+        <td><input type="number" id="3A"></td>
+        <td><input type="number" id="4A"></td>
+        <td><p id="showdiemA"></p></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button onclick="tongket()">Xếp hạng</button></td>
+        <td colspan="4" id="ketqua"></td>
+    </tr>
+</table>
+<h3>Ghi chú:</h3>
+<p>+ Điểm bình dựa trên cách tính như sau:</p>
+<p>+ Điểm kiểm tra 15 phút: hệ số 1</p>
+<p>+ Điểm kiểm tra 1 tiết: hệ số 2</p>
+<p>+ Điểm kiểm tra giữa kỳ: hệ số 2</p>
+<p>+ Điểm kiểm tra cuối kỳ: hệ số 3</p>
+<script src="BT-nhomT2.js"></script>
+</body>
+</html>
